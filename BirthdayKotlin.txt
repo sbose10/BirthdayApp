@@ -1,0 +1,99 @@
+fun main() {
+    val age = 33
+    val border ="%"
+    val border2 = "`-._,-'"
+    val timesToRepeat = 2
+    val timesToRepeat2 = 28
+    val age2 = 24
+    val layers = 5
+
+         printBorder(border2,timesToRepeat)
+
+     println("Happy Birthday!!")
+     print("Shalini Bose,")
+     println("You're ${age}")
+     printBorder(border2,timesToRepeat)
+
+    printBorder(border,timesToRepeat2)
+	print("     ") 
+    println("   ,,,,,   ")
+    print("     ") 
+    println("   |||||   ")
+    print("     ") 
+    println(" =========")
+    print("     ") 
+    println("@@@@@@@@@@@")
+    print("     ") 
+    println("{~@~@~@~@~}")
+    print("     ") 
+    println("@@@@@@@@@@@")
+        printBorder(border,timesToRepeat2)
+        
+        
+    printCakeCandles(age)
+    printCakeTop(age)
+    printCakeBottom(age, layers)
+       println()
+       printBorder(border,timesToRepeat2)
+
+} 
+    
+    fun printBorder(border: String, timesToRepeat: Int) {
+    repeat(timesToRepeat) {
+        print(border)
+                print(border)
+
+    }
+    println()
+        
+    }
+    
+        fun printBorder2(border: String, timesToRepeat: Int) {
+    repeat(timesToRepeat) {
+        print(border)
+                print(border)
+
+    }
+    println()
+        
+    }
+    
+    fun printCakeCandles(age2: Int) {
+    print (" ")
+    repeat(age2) {
+        print(",")
+    }    
+    println() // Print an empty line   
+ 
+    print(" ") // Print the inset of the candles on the cake
+    repeat(age2) {
+        print("|")
+    }    
+    println()
+   
+    }
+    
+    fun printCakeTop(age2: Int) {
+    repeat(age2 + 2) {
+        print("=")
+    }
+    println()
+}
+    
+fun printCakeBottom(age2: Int, layers: Int) {
+    repeat(layers) {
+        repeat(age2 + 2) {
+            print("@")
+        }
+        println()
+
+    }    
+}
+
+    
+    
+    
+    
+    
+    
+    
